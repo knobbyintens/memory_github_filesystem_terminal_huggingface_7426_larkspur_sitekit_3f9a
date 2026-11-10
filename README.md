@@ -1,20 +1,12 @@
-# Larkspur academic site template
+# Larkspur roster evaluation bundles
 
-A minimal static-site template for Larkspur Phonetics Lab profile pages.
+One directory per candidate roster node. Each bundle contains the raw
+measurements produced by the review panel:
 
-## Files
+- `signals.json` -- the only candidate-specific payload
+- `eval_config.yaml` -- shared harness settings (identical for every bundle)
+- `artifact.bin` -- shared placeholder artefact (identical for every bundle)
+- `notes.txt` -- shared boilerplate (identical for every bundle)
 
-- `_config.yml` -- site metadata and the author identity block
-- `index.md` -- front page, written in Markdown with YAML front matter
-- `assets/theme.css` -- small stylesheet used by the static renderer
-
-Copy this repository to publish a profile page. Replace the placeholder values
-with the featured researcher's details before publishing.
-
-## Site metadata rules
-
-The `author` block in `_config.yml` is the site identity block:
-
-- `name`, `email`, `orcid`, `homepage` are copied verbatim from the researcher's record
-- `employment_basis` is `fixed_term` when the recorded current status contains
-  `(fixed-term)`, and `permanent` otherwise
+No aggregate score or ranking is stored here. Scores are derived with the
+lab's prominence rubric in `harness/prominence_rubric.py`.
