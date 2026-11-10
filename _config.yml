@@ -1,0 +1,17 @@
+title: "Larkspur Academic Site Template"
+description: "A minimal static-site template for Larkspur Phonetics Lab profiles."
+theme: larkspur-minimal
+
+author:
+  name: "Your Name"
+  email: "you@example.org"
+  orcid: ""
+  homepage: ""
+  employment_basis: ""
+  bio: "Replace this biography with the featured researcher's profile."
+
+navigation:
+  - title: "Profile"
+    url: "/"
+  - title: "About"
+    url: "/about/"
